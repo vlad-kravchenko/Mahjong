@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="UWPMahjong.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPMahjong"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Name="Container">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <Button Name="Start" Content="Start" Margin="5,5,5,5" Click="Start_Click" HorizontalAlignment="Stretch" FontSize="20"></Button>
+            <TextBlock Name="Timer" Margin="5,5,5,5" HorizontalAlignment="Center" FontSize="20"></TextBlock>
+        </StackPanel>
+
+
+        <Grid Name="MainGrid" Grid.Row="1"></Grid>
+    </Grid>
+</Page>
