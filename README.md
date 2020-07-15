@@ -1,0 +1,2 @@
+# Mahjong
+Classical Mahjong game
